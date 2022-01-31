@@ -1,0 +1,331 @@
+﻿<Window x:Class="WpfApplab15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplab15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="525">
+    <Window.Resources>
+        <Style x:Key="Zagolovok">
+            <Setter Property="Paragraph.FontSize" Value="18" ></Setter>
+            <Setter Property="Paragraph.FontFamily" Value="Times New Roman" ></Setter>
+            <Setter Property="Paragraph.FontStyle" Value="Normal" ></Setter>
+            <Setter Property="Paragraph.FontWeight" Value="Bold" ></Setter>
+            <Setter Property="Paragraph.Foreground" Value="Black" ></Setter>
+            <Setter Property="Paragraph.TextAlignment" Value="Center"></Setter>
+        </Style>
+
+        <Style x:Key="Abzac">
+            <Setter Property="Paragraph.FontSize" Value="14" ></Setter>
+            <Setter Property="Paragraph.FontFamily" Value="Times New Roman" ></Setter>
+            <Setter Property="Paragraph.FontStyle" Value="Normal" ></Setter>
+            <Setter Property="Paragraph.FontWeight" Value="Normal" ></Setter>
+            <Setter Property="Paragraph.Foreground" Value="Black" ></Setter>
+            <Setter Property="Paragraph.TextAlignment" Value="Justify"></Setter>
+        </Style>
+        <Style x:Key="List">
+            <Setter Property="Paragraph.FontSize" Value="14" ></Setter>
+            <Setter Property="Paragraph.FontFamily" Value="Times New Roman" ></Setter>
+            <Setter Property="Paragraph.FontStyle" Value="Normal" ></Setter>
+            <Setter Property="Paragraph.FontWeight" Value="Normal" ></Setter>
+            <Setter Property="Paragraph.Foreground" Value="Black" ></Setter>
+            <Setter Property="Paragraph.TextAlignment" Value="Left"></Setter>
+        </Style>
+        <Style x:Key="TableTextHeader">
+            <Setter Property="Paragraph.FontSize" Value="16" ></Setter>
+            <Setter Property="Paragraph.FontFamily" Value="Times New Roman" ></Setter>
+            <Setter Property="Paragraph.FontStyle" Value="Normal" ></Setter>
+            <Setter Property="Paragraph.FontWeight" Value="Bold" ></Setter>
+            <Setter Property="Paragraph.Foreground" Value="Black" ></Setter>
+            <Setter Property="Paragraph.TextAlignment" Value="Center"></Setter>
+        </Style>
+        <Style x:Key="TableText">
+            <Setter Property="Paragraph.FontSize" Value="14" ></Setter>
+            <Setter Property="Paragraph.FontFamily" Value="Times New Roman" ></Setter>
+            <Setter Property="Paragraph.FontStyle" Value="Normal" ></Setter>
+            <Setter Property="Paragraph.FontWeight" Value="Normal" ></Setter>
+            <Setter Property="Paragraph.Foreground" Value="Black" ></Setter>
+            <Setter Property="Paragraph.TextAlignment" Value="Center"></Setter>
+        </Style>
+        <Style x:Key="TableCell">
+            <Setter Property="TableCell.BorderThickness" Value="1"/>
+            <Setter Property="TableCell.BorderBrush" Value="Black"/>
+
+
+        </Style>
+
+    </Window.Resources>
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph Style="{StaticResource Zagolovok}">Общая характеристика
+                    региона строительства</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}">
+                    Саратовская область - одна из крупнейших в Российской Федерации, 
+                    где сложилась система производства зерна, подсолнечника, 
+                    продуктов животноводства. Земельный фонд области по всем категориям 
+                    земель составляет 10123,9 тыс. га. Сельскохозяйственные угодья занимают 8495, 
+                    9 тыс. га, или 84%. Структура сельскохозяйственных угодий 
+                    (по данным земельного отчета за 1996г.): пашня-6260,0 тыс.га (74,5%), 
+                    сенокосы-103,0 тыс.га (1,2%), пастбища-1968,0 тыс.га (23,4%).
+                    Отличительные особенности - высокая распаханность сельскохозяйственных угодий.
+                    В структуре земельного фонда по всем категориям земель
+                    преобладающую часть - 82,1% - составляют земли сельскохозяйственных предприятий.
+                </Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" TextAlignment="Center" FontStyle="Italic">Соотношение типов почв в земельных ресурсах области следующее:</Paragraph>
+                <List Style="{StaticResource List}">
+                    <ListItem>
+                        <Paragraph>черноземные почвы - 50,4%,</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>каштановые - 30%,</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>солонцовые комплексы - 11,5%,</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>аллювиальные почвы - 6,3%,</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>прочие - 1,8%.</Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph Style="{StaticResource Abzac}" >Преобладают почвы глинистые и тяжелосуглинистые - 86%, на среднесуглинистые приходится 9%, на легкосуглинистые и песчаные - 5%.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" TextAlignment="Center" FontStyle="Italic">В Саратовской области сосредоточен крупный потенциал предприятий стройиндустрии:</Paragraph>
+                <List Style="{StaticResource List}">
+                    <ListItem>
+                        <Paragraph>35 заводов по производству сборного железобетона;</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>4 завода по производству цемента и извести;</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>5 заводов по производству силикатного кирпича;</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>56 заводов по производству керамического кирпича;</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>16 заводов по производству нерудных строительных материалов.</Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph Style="{StaticResource Abzac}" >Транспортную сеть общего пользования составляют 2312 км. железнодорожных путей, 9828 км.
+                    автомобильных дорог с твердым покрытием; 65,3 км трамвайных путей; 121,4 км троллейбусных линий. Ведущее место в транспортной 
+                    инфраструктуре области занимает железная дорога, на долю которой приходится свыше 90% грузо- и около 40% пассажирооборота.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >Через Саратов проходят многие прямые и транзитные авиалинии, соединяющие его с Москвой, Волгоградом, 
+                    Санкт-Петербургом, Самарой, курортами Кавказа и Крыма, а также со многими районами области. Саратов - крупнейший речной порт на Волге. 
+                    Водный путь связывает город с промышленным центром России, Москвой (канал им. Москвы), Западным Уралом (р.Кама), Черным морем (Волга-Донской канал), 
+                    Прибалтикой и Белым морем (водная система Волго-Балт). В южной части города построен грузовой механизированный порт.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >По уровню и масштабам развития промышленного производства Саратовская область занимает одно из ведущих мест в Поволжском 
+                    экономическом регионе. Промышленность области - это более 2000 крупных и средних предприятий. Здесь выпускают троллейбусы, свечи зажигания, точные приборы, холодильники и морозильники, строительное стекло, 
+                    минеральные удобрения, производят бензин, продукты нефтехимии, печатают школьные учебники и книги, работают химическое, дизельное и мебельное производства.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >В структуре промышленности наибольший удельный вес принадлежит топливно-энергетическому комплексу (38,4%), машиностроению (19,1%), 
+                    химической и нефтехимической (15,6%), пищевой (9,2%) промышленности.</Paragraph>
+                <Paragraph Style="{StaticResource Zagolovok}">Погодно-климатические факторы</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >Климат Саратовской области – умеренно-континентальный. Он обусловлен климатическими особенностями Нижнего Поволжья. 
+                    Зима морозная, в основном многоснежная. Летний период – сухой и жаркий. Много солнечных дней. Частые ветры, летом с пылью. Среднегодовая температура воздуха +6,6°С. 
+                    Летом она может подниматься до +41,0°С, зимой опускаться до -44,0°С.Самый холодный месяц – январь, а самый теплые – июнь, июль. Господствующие ветра северо-западные и западные.
+                    Осадков выпадает сравнительно немного – 373-400 мм в год. Снежный покров устанавливается в конце ноября, начале декабря, исчезает в конце марта начале апреля. ДКЗ IV.</Paragraph>
+                <Paragraph Style="{StaticResource Zagolovok}">Рельеф местности</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >Район проложения трассы автомобильной дороги  в геоморфологическом отношении расположен в восточной части
+                    Сыртовой равнины Саратовского Заволжья, где рельеф местности имеет слабо-холмистый характер.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >Перепад высот по трассе составляет 35,0м. Трассой пересекаются ряд оврагов и логов, не имеющих постоянного водотока.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >По характеру и степени увлажнения местность по всей трассе относится к первому 
+                    типу (сухие места без избыточного увлажнения в отдельные периоды года). Естественный сток поверхностных 
+                    вод не затруднен.</Paragraph>
+                <Paragraph Style="{StaticResource Zagolovok}">Растительность и почвы</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >Данный район относится к степной зоне, где широко распространены сухие 
+                    типчаково-ковылковые степи (ковыли Лессинга и тырса, типчак сизый, полынь Лерха и ромашки) на темнокаштановых 
+                    и каштановых почвах. Мощность почвенного слоя 0.1 – 0.3 метра.</Paragraph>
+                <Paragraph Style="{StaticResource Zagolovok}">Инженерно-геологические условия</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >В геологическом строении участка автомобильной дороги, 
+                    до исследованной глубины, принимают участие 
+                    четвертичные отложения, представленные элювиально-делювиальными суглинками.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >Суглинки тяжелые, твердой и полутвердой консистенции 
+                    пригодны для отсыпки земляного полотна. 
+                    В логах и оврагах суглинки полутвердой консистенции. 
+                    Грунтовые воды по всей трассе скважинами не вскрыты.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >Грунты сосредоточенного резерва, расположенного в  м. влево от ПК 31+00,
+                    представлены также суглинками тяжелыми твердой и полутвердой консистенции.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >Грунты резерва пригодны для отсыпки земляного полотна.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >Отрицательных геологических явлений и процессов по трассе не наблюдается.</Paragraph>
+                <Paragraph Style="{StaticResource Zagolovok}">Технические нормативы автомобильной дороги</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" >В соответствии с заданной интенсивностью 
+                    движение 3000 авт/сут данный участок 
+                    автомобильной дороги относиться к III технической категории.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}" TextAlignment="Center" FontStyle="Italic" >
+                    Таблица 1 – Технические нормативы автомобильной дороги</Paragraph>
+                <Table BorderThickness="2" BorderBrush="Black">
+
+                    <Table.Columns>
+                        <TableColumn Width="0.4*" />
+                        <TableColumn Width="3*" />
+                        <TableColumn Width="*" />
+                        <TableColumn Width="*" />
+                    </Table.Columns>
+                    <TableRowGroup  Style="{StaticResource TableText}">
+                        <TableRow Style="{StaticResource TableTextHeader}">
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>№ п/п</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>Наименование показателей</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>Единицы измерения</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>Величина</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>1</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>Общее число полос движения</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>шт.</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>2</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>2</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>Ширина полосы движения</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>м.</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>3,5</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>3</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>Ширина проезжей части</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>м.</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>7,0</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>4</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>Ширина обочины</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>м.</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>2,5</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>5</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>Ширина укрепленной части обочины</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>м.</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>1,5</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>6</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>Ширина краевой полосы у обочины</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>м.</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>0,5</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>7</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>Наибольший продольный уклон</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>‰</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>50</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>8</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph>Общее число полос движения:</Paragraph>
+                                <Paragraph>В плане</Paragraph>
+                                <Paragraph>В профиле:</Paragraph>
+                                <Paragraph>выпуклых</Paragraph>
+                                <Paragraph>вогнутых</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph></Paragraph>
+                                <Paragraph>м.</Paragraph>
+                                <Paragraph></Paragraph>
+                                <Paragraph>м.</Paragraph>
+                                <Paragraph>м.</Paragraph>
+                            </TableCell>
+                            <TableCell Style="{StaticResource TableCell}">
+                                <Paragraph></Paragraph>
+                                <Paragraph>800</Paragraph>
+                                <Paragraph></Paragraph>
+                                <Paragraph>10000</Paragraph>
+                                <Paragraph>3000</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                <Paragraph Style="{StaticResource Zagolovok}">
+                    Трасса дороги
+                </Paragraph>
+                <Paragraph Style="{StaticResource Abzac}">Начало трассы ПК 00+00 принят на оси существующей дороги Энгельс-Ершов-Озинки на конце 
+                    мостового перехода через р.Камышевка у сбросных сооружений Чаплевского водохранилища, что соответствует 196 км. Данной дороги.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}">Принятая трасса проходит по существующей дороге в направлении к пгт. Озинки. На трассе назначено 
+                    4 угла поворота с радиусами удовлетворяющими нормативам дороги III технической категории.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}">Конец трассы ПК 100+00 принят на оси существующее дороги, что соответствует 
+                    км. 206 в 2.5 км. Западнее д. Матвеевка.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}">Протяженность участка дороги – 10.0 км.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}">Общее направление трассы – восточное.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}">Длина прямых – 8738.85 м.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}">Длина кривых – 1261.15 м.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}">Коэффициент удлинения трассы – 1.02.</Paragraph>
+                <Paragraph Style="{StaticResource Abzac}">Удельное протяжение кривых – 0.13.</Paragraph>
+                    
+
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+
+    </Grid>
+</Window>
